@@ -1,4 +1,4 @@
-# LSD_RAD2017
+﻿# LSD_RAD2017
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
 #Your task until next week: Requirements Elicitation
@@ -111,3 +111,42 @@ Below is a table of the HTTP methods and their descriptions.
 * state of system. i.e., up-and-running or in upgrade
 * get last ingested story
 * get last comment on a story
+
+###Nonfunctional Requirements
+Requirements elaborating performance characteristics of the system. 
+
+a. Usability
+•	Usability tests are required for all the system functions. Frequently used and critical functions are prioritized. 
+
+b. Reliability
+•	The system shall reside on a server with an uptime of more than 95% during the period of 
+•	The system shall not lose any contents, even during downtime (for upgrade/crashes). 
+•	A 24/7 uptime mechanism buffering incoming content to the system is required, in order to publish new data to the system when it is operational. This fixes data loss during system downtime. 
+•	The systems performance should be monitored. 
+•	Thorough testing of the  
+•	Users should be able to trust the system. Failures should be rare. 
+
+c. Performance
+•	The response time of user actions should mimic that of the original Hacker News website. 
+•	During stress on the system, the maximum response time should not exceed __ ms. 
+•	The system should be scalable, in order to function optimally on devices with different screen sizes. 
+
+d. Supportability
+•	The implementation code shall be well documented.
+•	Test cases shall be well documented. 
+
+e. Implementation
+•	The system should be able to store the required amount of data. For example, the amount of a user’s Karma points or a post’s up-votes. 
+•	The systems data or source code should not be available to a third party (matter of security). 
+•	An underlying database must handle all data. 
+
+
+f. Interface
+•	The base design shall mimic the one of the original Hacker News.
+•	Orange/gray/black palette. 
+
+g. Packaging
+* TBD
+
+h. Legal
+* TBD

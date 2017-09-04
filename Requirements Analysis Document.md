@@ -1,10 +1,10 @@
 ﻿# LSD_RAD2017
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
-#Your task until next week: Requirements Elicitation
-*Extract a list of requirements from the description above.
-*Take special care of extracting a complete set of functional as well as non-functional requirements.
-###Create a Requirements Analysis Document (RAD) for your project
+# Your task until next week: Requirements Elicitation
+* Extract a list of requirements from the description above. 
+* Take special care of extracting a complete set of functional as well as non-functional requirements.
+### Create a Requirements Analysis Document (RAD) for your project
 1. Introduction  
   A. Purpose of the system  
   B. Scope of the system  
@@ -32,15 +32,15 @@ The task during the first eight weeks of the course is to implement a functional
 4. Glossary
 
 
-#Introduction
+# Introduction
 
-##Purpose of the system
+## Purpose of the system
 Hacker news is a social news website focusing on computer science and entrepreneurship. It is similiar to reddit. It is a website where users can post stories. It enables users to debate by letting them comment on stories and other users comments. For the user to comment on a story or another comment, they've to be logged in. 
 
 Users can upvote and downvote stories or other users comment. However, unlike reddit the logged in user needs atleast 500 karma points before they are able to downvote content. Karma points are calculated by the number of up-votes a given user's content has received minus the number of down-votes. 
 All users have the option to flag submitted content as spam.
 
-##Scope of the system
+## Scope of the system
 The system will be build as a webapplication consisting in back- and frontend development. 
 The backend will be build as a RESTful API, where the frontend will interact with the backend to retrieve the requested data. 
 The frontend will present the user with an overview of stories and will be able to:
@@ -59,7 +59,7 @@ The above is also the major functions, that is the most important part of the sy
 
 The RESTful API will service external programs. It can provide stories, comments, jobs, Ask HN's and even polls. Everything is just an item and are identified by their ids, which are unique integers. They live under `/v0/item/<id>`.
 
-###Items
+### Items
 All items have some of the following properties. Required properties are in **bold**.
 
 **Field**       | **Description**
@@ -80,7 +80,7 @@ title           | The title of the story, poll, or job
 parts           | A list of related pollopts, in display order
 descendants     | In the case of stories or polls, the total comment count
 
-###Users
+### Users
 Users are identified by case-sensitive ids, and live under `v0/user/`. Only users that have public activity (comments or story submissions) on the stire are available through the API.
 
 **Field**       | **Description**
@@ -92,7 +92,7 @@ delay           | Delay in minutes between a comment's creation and its visibili
 about           | The user's optional self-description. HTML
 submitted       | List of the user's stories, polls, and comments
 
-###HTTP Methods
+### HTTP Methods
 Below is a table of the HTTP methods and their descriptions.
 
 **Method**              | **Description**
@@ -112,7 +112,7 @@ Below is a table of the HTTP methods and their descriptions.
 * get last ingested story
 * get last comment on a story
 
-###Nonfunctional Requirements
+### Nonfunctional Requirements
 Requirements elaborating performance characteristics of the system. 
 
 a. Usability

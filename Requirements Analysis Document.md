@@ -151,7 +151,7 @@ submitted       | List of the user's stories, polls, and comments
 The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has.
 
 
-### B1. Functional requirements
+### B1. Overview
 
 These are some of the functional requirements that our system has:
 ###### Create user account
@@ -221,105 +221,61 @@ h. Legal
 ### D. System models
 #### a. Scenarios
 ##### See new stories
-**Scenario name**       | See new stories
+**Scenario name**       | **See new stories**
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button in the top menu labeled "new".
-4. The user is hereby presented with the newest stories uploaded to the site. 
+**participating actor instances**| User
+**Flow of events**           | <ol> <li> The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button in the top menu labeled "new".</li><li>The user is hereby presented with the newest stories uploaded to the sit.</li></ol>
 
 ##### Comment on stories
 **Scenario name**       | Comment on stories
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user logs in to the system by clicking "login".
-4. The user clicks on the little button labeled "comments" below a story.
-5. The user enters the desired text in the comment field and presses "add comment". 
-6. The comment is now visible to other users. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user logs in to the system by clicking "login"</li><li>The user clicks on the little button labeled "comments" below a story</li><li>The user enters the desired text in the comment field and presses "add comment"</li><li>The comment is now visible to other users<li></ol> 
 
 ##### Show something that a user made
 **Scenario name**       | Show something that a user made
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "show". 
-4. The user is is hereby presented with user-made projects, shown by the creators. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "show"</li><li>The user is is hereby presented with user-made projects, shown by the creators</li></ol>
 
 ##### Able to ask a question
 **Scenario name**       | Able to ask a question
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "submit". 
-4. The user writes a question in the textfield, leaving the "url" field blank.
-5. The question is now uploaded to the site. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a question in the textfield, leaving the "url" field blank</li><li>The question is now uploaded to the site</li></ol>
 
 
 ##### See asked questions
 **Scenario name**       | See asked questions
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "ask". 
-4. The user is hereby presented with questions from other users of the site.  
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "ask"</li><li>The user is hereby presented with questions from other users of the site</li></ol>
 
 ##### See job opportunities at startups funded by Y Combinator
 **Scenario name**       | See job opportunities at startups funded by Y Combinator
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "jobs".  
-4. The user is hereby presented with job opportunites. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li>
+<li>The user clicks the button at the top labeled "jobs"</li><li>The user is hereby presented with job opportunites</li></ol>
 
 ##### Submit a story
 **Scenario name**       | Submit a story
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "submit". 
-4. The user writes a desired title for the story in the "title" text field. 
-5. The user writes an url for the story in the "url" text field. 
-7. The user clicks the "submit" button. 
-8. The story posted by the user is now visible on the site.
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a desired title for the story in the "title" text field</li><li>The user writes an url for the story in the "url" text field</li><li>The user clicks the "submit" button</li><li>The story posted by the user is now visible on the site</li></ol>
 
 ##### Sign up and be a part of the community
 **Scenario name**       | Sign up and be a part of the community
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "login". 
-4. The user writes a desired username and password in the text fields under the "Create Account" section.
-5. The user clicks the button labeled "create account". 
-6. The user is now logged in with the created account. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "login"</li><li>The user writes a desired username and password in the text fields under the "Create Account" section</li><li>The user clicks the button labeled "create account"</li>
+<li>The user is now logged in with the created account</li></ol>
 
 ##### Login
 **Scenario name**       | Login
 ------------    | ------------
-**participating actor instances**| **
-**Flow of events**           | 
-1. The user opens the website. 
-2. The user is presented with the front page of the system.
-3. The user clicks the button at the top labeled "login". 
-4. The user writes the the personal credentials in the the text fields under the "Login" section.
-5. The user clicks the button labeled "login". 
-6. The user is now logged in. 
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "login"</li><li>The user writes the the personal credentials in the the text fields under the "Login" section</li><li>The user clicks the button labeled "login"</li><li>The user is now logged in</li></ol>
 
 
 

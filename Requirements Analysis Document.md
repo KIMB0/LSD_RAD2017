@@ -148,7 +148,38 @@ submitted       | List of the user's stories, polls, and comments
 # 3. Proposed system
 ### A. Overview
 
-### B. Nonfunctional Requirements
+The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has.
+
+
+### B1. Overview
+
+These are some of the functional requirements that our system has:
+###### Create user account
+- A user is able to create an account
+- The user should select an username and a password
+- The user is now able to login
+
+###### Login
+- A user login with an username and a password
+- System checks the database
+- If the user is in the system, the user is logged in.
+
+###### Comments on story
+- A user comments on a story
+- System checks if the user is logged in
+- If true, then the comment is posted
+
+###### See story
+- A user is able to see stories - even though they're not logged in
+
+###### Upvoting
+- A user press the upvote button on a story
+- System checks if the user is logged in
+- System checks how many point the user has
+- If both criteria are met, then the upvote is succesful
+
+
+### B2. Nonfunctional Requirements
 Requirements elaborating performance characteristics of the system. 
 
 a. Usability

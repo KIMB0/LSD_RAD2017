@@ -282,3 +282,13 @@ h. Legal
 
 
 #### b. Use case models
+
+##### Create account
+**Use case name**       | Create account
+------------    | ------------
+**Participating actors**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks on create account</li><li>The user choose an username and password</li><li>The user clicks "Create account"</li><li>The system stores the userdata in the database</li><li>The user is now logged in</li></ol>
+**Entry condition**| None
+**Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
+**Quality requirements** | The respoonse time for creating a user should not exceed that of the original website Hackernews
+

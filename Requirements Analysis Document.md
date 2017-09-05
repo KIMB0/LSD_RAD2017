@@ -59,6 +59,23 @@ The above is also the major functions, that is the most important part of the sy
 
 The RESTful API will service external programs. It can provide stories, comments, jobs, Ask HN's and even polls. Everything is just an item and are identified by their ids, which are unique integers. They live under `/v0/item/<id>`.
 
+## C. Objectives and success criteria of the project
+
+## D. Definitions, acronyms, and abbreviations
+
+## E. References
+
+## F. Overview
+
+
+# 2. Current system
+
+# 2. Proposed system
+
+
+
+
+
 ### Items
 All items have some of the following properties. Required properties are in **bold**.
 

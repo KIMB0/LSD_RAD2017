@@ -32,15 +32,15 @@ The task during the first eight weeks of the course is to implement a functional
 4. Glossary
 
 
-# Introduction
+# 1. Introduction
 
-## Purpose of the system
+## A. Purpose of the system
 Hacker news is a social news website focusing on computer science and entrepreneurship. It is similiar to reddit. It is a website where users can post stories. It enables users to debate by letting them comment on stories and other users comments. For the user to comment on a story or another comment, they've to be logged in. 
 
 Users can upvote and downvote stories or other users comment. However, unlike reddit the logged in user needs atleast 500 karma points before they are able to downvote content. Karma points are calculated by the number of up-votes a given user's content has received minus the number of down-votes. 
 All users have the option to flag submitted content as spam.
 
-## Scope of the system
+## B. Scope of the system
 The system will be build as a webapplication consisting in back- and frontend development. 
 The backend will be build as a RESTful API, where the frontend will interact with the backend to retrieve the requested data. 
 The frontend will present the user with an overview of stories and will be able to:

@@ -292,3 +292,12 @@ h. Legal
 **Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
 **Quality requirements** | The respoonse time for creating a user should not exceed that of the original website Hackernews
 
+##### Ordering after newest story
+**Use case name**       | Sort story
+------------    | ------------
+**Participating actors**| User
+**Flow of events** | <ol><li>The user is logged in</li><li>The user press the sort button, and sorts after the newest story</li><li>The system calls a sort function, that orders the list, so the new story is first</li><li>The list are now sorted</li></ol>
+**Entry condition**| None
+**Exit condition** | <ol><li>The user refreshes the page</li></ol>
+**Quality requirements** | The sorting function should work fast
+

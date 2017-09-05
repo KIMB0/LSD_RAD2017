@@ -47,7 +47,7 @@ The frontend will present the user with an overview of stories and will be able 
 
 * See new stories
 * Comments on stories
-* Show something that a user made
+* Show projects made by users
 * Able to ask a question
 * See asked questions
 * See job opportunities at startups funded by Y Combinator
@@ -70,6 +70,15 @@ The RESTful API will service external programs. It can provide stories, comments
 
 # 2. Current system
 
+This is a complete copy of [HackerNews](news.ycombinator.com). 
+
+
+
+
+# 3. Proposed system
+### A. Overview
+
+### B. Functional Requirements
 
 
 
@@ -107,10 +116,8 @@ about           | The user's optional self-description. HTML
 submitted       | List of the user's stories, polls, and comments
 
 
-# 3. Proposed system
-### A. Overview
 
-### B. Nonfunctional Requirements
+### C. Nonfunctional Requirements
 Requirements elaborating performance characteristics of the system. 
 
 a. Usability

@@ -47,7 +47,7 @@ The frontend will present the user with an overview of stories and will be able 
 
 * See new stories
 * Comments on stories
-* Show projects made by users
+* Show something that a user made
 * Able to ask a question
 * See asked questions
 * See job opportunities at startups funded by Y Combinator
@@ -108,15 +108,6 @@ The system is an exact copy of Hackernews’ system. Therfore our system will ha
 
 # 2. Current system
 
-This is a complete copy of [HackerNews](news.ycombinator.com). 
-
-
-
-
-# 3. Proposed system
-### A. Overview
-
-### B. Functional Requirements
 
 
 
@@ -154,8 +145,10 @@ about           | The user's optional self-description. HTML
 submitted       | List of the user's stories, polls, and comments
 
 
+# 3. Proposed system
+### A. Overview
 
-### C. Nonfunctional Requirements
+### B. Nonfunctional Requirements
 Requirements elaborating performance characteristics of the system. 
 
 a. Usability
@@ -193,3 +186,113 @@ g. Packaging
 
 h. Legal
 * TBD
+
+### D. System models
+#### a. Scenarios
+##### See new stories
+**Scenario name**       | See new stories
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button in the top menu labeled "new".
+4. The user is hereby presented with the newest stories uploaded to the site. 
+
+##### Comment on stories
+**Scenario name**       | Comment on stories
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user logs in to the system by clicking "login".
+4. The user clicks on the little button labeled "comments" below a story.
+5. The user enters the desired text in the comment field and presses "add comment". 
+6. The comment is now visible to other users. 
+
+##### Show something that a user made
+**Scenario name**       | Show something that a user made
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "show". 
+4. The user is is hereby presented with user-made projects, shown by the creators. 
+
+##### Able to ask a question
+**Scenario name**       | Able to ask a question
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "submit". 
+4. The user writes a question in the textfield, leaving the "url" field blank.
+5. The question is now uploaded to the site. 
+
+
+##### See asked questions
+**Scenario name**       | See asked questions
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "ask". 
+4. The user is hereby presented with questions from other users of the site.  
+
+##### See job opportunities at startups funded by Y Combinator
+**Scenario name**       | See job opportunities at startups funded by Y Combinator
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "jobs".  
+4. The user is hereby presented with job opportunites. 
+
+##### Submit a story
+**Scenario name**       | Submit a story
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "submit". 
+4. The user writes a desired title for the story in the "title" text field. 
+5. The user writes an url for the story in the "url" text field. 
+7. The user clicks the "submit" button. 
+8. The story posted by the user is now visible on the site.
+
+##### Sign up and be a part of the community
+**Scenario name**       | Sign up and be a part of the community
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "login". 
+4. The user writes a desired username and password in the text fields under the "Create Account" section.
+5. The user clicks the button labeled "create account". 
+6. The user is now logged in with the created account. 
+
+##### Login
+**Scenario name**       | Login
+------------    | ------------
+**participating actor instances**| **
+**Flow of events**           | 
+1. The user opens the website. 
+2. The user is presented with the front page of the system.
+3. The user clicks the button at the top labeled "login". 
+4. The user writes the the personal credentials in the the text fields under the "Login" section.
+5. The user clicks the button labeled "login". 
+6. The user is now logged in. 
+
+
+
+
+
+
+#### b. Use case models

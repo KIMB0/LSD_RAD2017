@@ -309,8 +309,11 @@ h. Legal
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
 
 ##### Job Opportunities
-**Scenario name**       | Login
+**Scenario name**       | Job Opportunities
 ------------    | ------------
 **participating actor instances**| User
 **Flow of events** | <ol><li>The user opens the website</li><li>User clicks on the "Jobs" menu item</li><li></li><li>The user is presented with jobs from startups that are funded by Y Combinator</li><li>The user can click on any post to see its content</li><li>User will be directed to a post on the website or an external post about the job opportunity</li></ol>
+**Entry condition**| Clicking on the menu item: "Jobs"
+**Exit condition** | <ol><li>Clicking on another menu item or homepage</li></ol>
+**Quality requirements** | The list should be updated fast to the user, and there should be low response time
 

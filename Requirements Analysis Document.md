@@ -301,3 +301,11 @@ h. Legal
 **Exit condition** | <ol><li>The user refreshes the page</li></ol>
 **Quality requirements** | The sorting function should work fast
 
+##### Viewing a story
+**Use case name**       | View story
+------------    | ------------
+**Participating actors**| User
+**Flow of events** | <ol><li>The user goes to the website</li><li>The user sees a list with stories</li><li>The user clicks on a story</li><li>The system gets the right story from the database</li><li>The user can now read the story</li></ol>
+**Entry condition**| Clicking on a story
+**Exit condition** | <ol><li>Clicking back</li></ol>
+**Quality requirements** | The list should be updated fast to the user, and there should be low response time

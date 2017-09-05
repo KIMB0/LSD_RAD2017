@@ -151,7 +151,7 @@ submitted       | List of the user's stories, polls, and comments
 The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has.
 
 
-### B1. Overview
+### B1. Functional requirement
 
 These are some of the functional requirements that our system has:
 ###### Create user account

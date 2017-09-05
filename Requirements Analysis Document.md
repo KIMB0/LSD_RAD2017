@@ -1,9 +1,7 @@
 ﻿# LSD_RAD2017
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
-# Your task until next week: Requirements Elicitation
-* Extract a list of requirements from the description above. 
-* Take special care of extracting a complete set of functional as well as non-functional requirements.
+
 ### Create a Requirements Analysis Document (RAD) for your project
 1. Introduction  
   A. Purpose of the system 
@@ -309,3 +307,10 @@ h. Legal
 **Entry condition**| Clicking on a story
 **Exit condition** | <ol><li>Clicking back</li></ol>
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
+
+##### Job Opportunities
+**Scenario name**       | Login
+------------    | ------------
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>User clicks on the "Jobs" menu item</li><li></li><li>The user is presented with jobs from startups that are funded by Y Combinator</li><li>The user can click on any post to see its content</li><li>User will be directed to a post on the website or an external post about the job opportunity</li></ol>
+

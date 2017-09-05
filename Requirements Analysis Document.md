@@ -268,8 +268,7 @@ h. Legal
 **Scenario name**       | Sign up and be a part of the community
 ------------    | ------------
 **participating actor instances**| User
-**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "login"</li><li>The user writes a desired username and password in the text fields under the "Create Account" section</li><li>The user clicks the button labeled "create account"</li>
-<li>The user is now logged in with the created account</li></ol>
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "login"</li><li>The user writes a desired username and password in the text fields under the "Create Account" section</li><li>The user clicks the button labeled "create account"</li><li>The user is now logged in with the created account</li></ol>
 
 ##### Login
 **Scenario name**       | Login

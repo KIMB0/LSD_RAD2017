@@ -70,9 +70,6 @@ The RESTful API will service external programs. It can provide stories, comments
 
 # 2. Current system
 
-# 2. Proposed system
-
-
 
 
 
@@ -109,27 +106,11 @@ delay           | Delay in minutes between a comment's creation and its visibili
 about           | The user's optional self-description. HTML
 submitted       | List of the user's stories, polls, and comments
 
-### HTTP Methods
-Below is a table of the HTTP methods and their descriptions.
 
-**Method**              | **Description**
-------------            | -------------
-**GET** /newest         | Get the newest story from hackernews
-**GET** /comments       | Get newest comments
-**GET** /show           | Show what other people have made that you can play with
-**GET** /ask            | Get asked questions from newest to oldest
-**GET** /jobs           | Get jobs at startups founded by Y Combinator
-**GET** /v0/item/id     | Get the specific item  
-**POST** /login         | Post login details to enter the application
-**POST** /              | ad
+# 3. Proposed system
+### A. Overview
 
-
-
-* state of system. i.e., up-and-running or in upgrade
-* get last ingested story
-* get last comment on a story
-
-### Nonfunctional Requirements
+### B. Nonfunctional Requirements
 Requirements elaborating performance characteristics of the system. 
 
 a. Usability

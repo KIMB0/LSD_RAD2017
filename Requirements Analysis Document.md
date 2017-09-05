@@ -61,11 +61,49 @@ The RESTful API will service external programs. It can provide stories, comments
 
 ## C. Objectives and success criteria of the project
 
+The goal for the objectives and success criterias is to give the project team and stakeholders an insight of the developed system.
+A projects success criteria can be stated as:
+
+> Project success criteria are the standards by which the project will be judged at the end to decide whether or not it has been successful in the eyes of the stakeholders.
+
+The below table will describe the objectives and how to success them.
+
+**Objectives**  | **Success Criteria**
+------------    | ------------
+Everyone is trained and have a basic understanding of the skills that are needed to achieve the project | To achieve this, the project team will undergo a training course in the used technology for the project. This makes sure that everyone is on the same level or atleast close to.
+Project structure is essential to keep up the speed | A project management tool will be used to give the project team a view of the current status of the project. Everyone on the project should be able to see what their colleagues are working on. This tool will also show what functionality is needed, what are ongoing, what is in test phase, and what is done.
+Everyone has an understanding on what is going | A weekly meeting will be hold to look retrospectly on the project. What has been done, what are people working on, and is their any questions to the project leader or stakeholders
+Functionality are not done before the test says so | The person(s) working on a functionality should make some kind of test to make sure that it is working as intended. Also when the project change.
+Everyone in the project team has the same version of the project | By using a versioning control system we can make sure that everyone in the project team are having the same version of the built project. An example could be to use GIT as a version control system. Before end day ends every employee push to the repository; either the main or their own branch. Before the day starts they pull the newest version of the project.
+
 ## D. Definitions, acronyms, and abbreviations
+
+The definitions, acronyms, and abbreviations have the intention to give an overview of the special "words" throughout the requirement analysis. This can be words or abbreviations that are not quitly understood, which then will be found in the below table to clear up any confusions for who might read this analysis.
+
+By definition:
+> an abbreviation may be any type of shortened form, such as words with the middle omitted (for example, Rd for road or Dr for Doctor), an acronym is a word formed from the first letter or first few letters of each word in a phrase (such as sonar, created from sound navigation and ranging). 
+
+**Acronym**       | **Definition**
+----------------  | --------------
+REST              | Representational Stateless Transfer - a way of providing interoperability between computer systems on the Internet. 
+API               | Application Programming Interface - is a set of subroutine definitions, protocols, and tools for building application software
+GIT               | GIT is just a word. GIT is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.
+UUID              | Universally Unique Identifier - is a 128-bit number used to identify information in computer systems
+URL               | Uniform Resource Locater - is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it
+HN                | HackerNews - Description can be read at the beginning of the analysis
+
+
+**Abbreviation**  | **Definition**
+----------------  | --------------
+
 
 ## E. References
 
+1. [HackerNews Homepage](https://news.ycombinator.com/)
+2. 
+
 ## F. Overview
+The system is an exact copy of Hackernews’ system. Therfore our system will have the same functionallity as their system has.
 
 
 # 2. Current system

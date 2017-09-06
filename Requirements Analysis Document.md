@@ -3,6 +3,7 @@ First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
 
 ### Create a Requirements Analysis Document (RAD) for your project
+
 1. Introduction  
   A. Purpose of the system 
   B. Scope of the system  
@@ -10,19 +11,21 @@ The task during the first eight weeks of the course is to implement a functional
   D. Definitions, acronyms, and abbreviations  
   E. References  
   F. Overview  
+  
 2. Current system
+
 3. Proposed system  
-···A. Overview  
-  B. Functional requirements  
-  C. Nonfunctional requirements
-  ··a. Usability  
-     ···b. Reliability  
-     c. Performance  
-     d. Supportability  
-     e. Implementation  
-     f. Interface  
-     g. Packaging  
-     h. Legal       
+   A. Overview  
+   B. Functional requirements  
+   C. Nonfunctional requirements  
+      a. Usability   
+      b. Reliability   
+      c. Performance   
+      d. Supportability   
+      e. Implementation   
+      f. Interface   
+      g. Packaging   
+      h. Legal   
 
     D. Systemmodels  
     -   A. Scenarios  

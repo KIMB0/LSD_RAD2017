@@ -106,42 +106,7 @@ The system is an exact copy of Hackernews’ system. Therfore our system will ha
 
 # 2. Current system
 
-
-
-
-### Items
-All items have some of the following properties. Required properties are in **bold**.
-
-**Field**       | **Description**
-------------    | ------------
-**id**          | The item's unique ID (UUID)
-deleted         | true if the item is deleted
-type            | The type of the item. One of "job", "story", "comment", "poll", or "pollopt"
-by              | The username of the item's author
-time            | Creation date of the item. Stated in Unix Time
-text            | The comment, story, or poll text. HTML
-dead            | true if the item is dead
-parent          | The comment's parent: either another comment or the relevant story
-poll            | The pollopt's associated poll
-kids            | The ids of the item's comments in ranked display order
-url             | The URL of the story
-score           | The story's score or the votes for a pollopt
-title           | The title of the story, poll, or job
-parts           | A list of related pollopts, in display order
-descendants     | In the case of stories or polls, the total comment count
-
-### Users
-Users are identified by case-sensitive ids, and live under `v0/user/`. Only users that have public activity (comments or story submissions) on the stire are available through the API.
-
-**Field**       | **Description**
-------------    | ------------
-**id**          | The user's unique username. Case-sensitive. Required
-delay           | Delay in minutes between a comment's creation and its visibility to other users
-**created**     | Creation date of the user, in Unix Time
-**karma**       | The user's karma
-about           | The user's optional self-description. HTML
-submitted       | List of the user's stories, polls, and comments
-
+There is no current system.
 
 # 3. Proposed system
 ### A. Overview

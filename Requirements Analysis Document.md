@@ -109,7 +109,7 @@ The system is an exact copy of Hackernews’ system. Therfore our system will ha
 
 # 2. Current system
 
-There is no current system.
+The current system is HackerNews and you can see the description of the current system by reading the "Purpose of the System" and the "Scope of the system".
 
 # 3. Proposed system
 ### A. Overview

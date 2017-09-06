@@ -19,13 +19,13 @@ The task during the first eight weeks of the course is to implement a functional
    B. Functional requirements  
    C. Nonfunctional requirements  
       a. Usability   
-      b. Reliability   
-      c. Performance   
+      b. Reliability  
+      c. Performance  
       d. Supportability   
-      e. Implementation   
-      f. Interface   
-      g. Packaging   
-      h. Legal   
+      e. Implementation  
+      f. Interface  
+      g. Packaging  
+      h. Legal  
 
     D. Systemmodels  
     -   A. Scenarios  

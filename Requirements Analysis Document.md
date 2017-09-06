@@ -285,6 +285,43 @@ h. Legal
 **Use case name**       | Create account
 ------------    | ------------
 **Participating actors**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks "login"</li><li>The user chooses an username and password</li><li>The user clicks "Create account"</li><li>The system stores the userdata in the database</li><li>The user is now logged in</li></ol>
+**Entry condition**| None
+**Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
+**Quality requirements** | The respoonse time for creating a user should not exceed that of the original website Hackernews
+
+##### Login
+**Use case name**       | Login
+------------    | ------------
+**Participating actors**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks login</li><li> The user enters personal login credentials.</li></li><li>The user clicks "Login".<li>The system crosschecks the entered data with the data available in the database.</li><li>The user is now logged in</li></ol>
+**Entry condition**| * The user needs to have an account created beforehand. 
+**Exit condition** | * The user is logged in OR is told to check if entered data is correct. </li></ol>
+**Quality requirements** | The response time for checking the database and logging the user in, should not exceed that of the original website Hackernews.
+
+
+##### Ask Hacker News
+**Use case name**       | Ask Hacker News
+------------    | ------------
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a question in the textfield, leaving the "url" field blank</li><li>The user clicks the button at the top labeled "submit".</li><li>The system determines if the user has entered only text, or url also.</li><li>If the user has only entered text, the question is now uploaded to the site</li></ol>
+**Entry condition**| * The user needs to be logged in in order to submit a question. 
+**Exit condition** | * The post is created and is now visible to other users of the site. </li></ol>
+**Quality requirements** | The response time for uploading the question should not exceed that of the original website Hackernews.
+
+##### Submit a story
+**Use case name**       | Submit a story
+------------    | ------------
+**participating actor instances**| User
+**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a desired title for the story in the "title" text field</li><li>The user writes an url for the story in the "url" text field</li><li>The user clicks the "submit" button</li><li>The system determines if the user has entered only text, or title and a url also.</li><li>If both the title and the url field is used, the story posted by the user is now visible on the site</li></ol>
+**Entry condition**| * The user needs to be logged in in order to submit a post. 
+**Exit condition** | * The post is created and is now visible to other users of the site. </li></ol>
+**Quality requirements** | The response time for submitting a post should not exceed that of the original website Hackernews.
+
+##### Create account
+**Use case name**       | Create account
+------------    | ------------
+**Participating actors**| User
 **Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks on create account</li><li>The user choose an username and password</li><li>The user clicks "Create account"</li><li>The system stores the userdata in the database</li><li>The user is now logged in</li></ol>
 **Entry condition**| None
 **Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
@@ -316,4 +353,6 @@ h. Legal
 **Entry condition**| Clicking on the menu item: "Jobs"
 **Exit condition** | <ol><li>Clicking on another menu item or homepage</li></ol>
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
+
+
 

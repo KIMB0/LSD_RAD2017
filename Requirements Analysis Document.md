@@ -5,9 +5,9 @@ The task during the first eight weeks of the course is to implement a functional
 ### Create a Requirements Analysis Document (RAD) for your project
 
 1. Introduction  
-  A. Purpose of the system  
-  B. Scope of the system  
-  C. Objectives and success criteria of the project  
+  A. Purpose of the system    
+  B. Scope of the system  
+  C. Objectives and success criteria of the project    
   D. Definitions, acronyms, and abbreviations  
   E. References  
   F. Overview  

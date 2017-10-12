@@ -313,5 +313,8 @@ h. Legal
 **Exit condition** | <ol><li>Clicking on another menu item or homepage</li></ol>
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
 
+#### Use case diagram
+![alt text](https://github.com/KIMB0/LSD_frontend/blob/master/Hackernews%20UseCase%20Diagram.png "Use case diagram")
+
 
 

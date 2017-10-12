@@ -252,7 +252,7 @@ h. Legal
 ##### Create account
 **Use case name**       | Create account
 ------------    | ------------
-**Participating actors**| User
+**Participating actors**| User, Guest
 **Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks "login"</li><li>The user chooses an username and password</li><li>The user clicks "Create account"</li><li>The system stores the userdata in the database</li><li>The user is now logged in</li></ol>
 **Entry condition**| None
 **Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
@@ -286,19 +286,10 @@ h. Legal
 **Exit condition** | * The post is created and is now visible to other users of the site. </li></ol>
 **Quality requirements** | The response time for submitting a post should not exceed that of the original website Hackernews.
 
-##### Create account
-**Use case name**       | Create account
+##### Sort stories
+**Use case name**       | Sort stories
 ------------    | ------------
-**Participating actors**| User
-**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks on create account</li><li>The user choose an username and password</li><li>The user clicks "Create account"</li><li>The system stores the userdata in the database</li><li>The user is now logged in</li></ol>
-**Entry condition**| None
-**Exit condition** | <ol><li>The user is logged in, OR is promted to use another username</li></ol>
-**Quality requirements** | The respoonse time for creating a user should not exceed that of the original website Hackernews
-
-##### Ordering after newest story
-**Use case name**       | Sort story
-------------    | ------------
-**Participating actors**| User
+**Participating actors**| User, Guest
 **Flow of events** | <ol><li>The user is logged in</li><li>The user press the sort button, and sorts after the newest story</li><li>The system calls a sort function, that orders the list, so the new story is first</li><li>The list are now sorted</li></ol>
 **Entry condition**| None
 **Exit condition** | <ol><li>The user refreshes the page</li></ol>
@@ -307,13 +298,13 @@ h. Legal
 ##### Viewing a story
 **Use case name**       | View story
 ------------    | ------------
-**Participating actors**| User
+**Participating actors**| User, Guest
 **Flow of events** | <ol><li>The user goes to the website</li><li>The user sees a list with stories</li><li>The user clicks on a story</li><li>The system gets the right story from the database</li><li>The user can now read the story</li></ol>
 **Entry condition**| Clicking on a story
 **Exit condition** | <ol><li>Clicking back</li></ol>
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
 
-##### Job Opportunities
+##### View Job Opportunities
 **Scenario name**       | Job Opportunities
 ------------    | ------------
 **participating actor instances**| User

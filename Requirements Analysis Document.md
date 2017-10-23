@@ -114,7 +114,7 @@ The current system is HackerNews and you can see the description of the current 
 # 3. Proposed system
 ### A. Overview
 
-The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has.
+The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has. The main difference will be the frontend code.
 
 
 ### B1. Functional requirement
@@ -313,8 +313,20 @@ h. Legal
 **Exit condition** | <ol><li>Clicking on another menu item or homepage</li></ol>
 **Quality requirements** | The list should be updated fast to the user, and there should be low response time
 
-#### Use case diagram
+# Diagrams
+
+### Use case diagram
 ![UseCaseDiagram](https://github.com/KIMB0/LSD_frontend/blob/master/Hackernews-clone.png)
 
 
+## Domain Diagram
+Based on the existing HackerNews system there is only two datatypes: Users and Items.  
+![Domain Diagram for the System](https://github.com/KIMB0/LSD_frontend/blob/master/User_Domain_Model.jpg)
 
+## Sequence Diagrams
+There are two types of Sequence Diagrams: One for Users and one for Guests.  
+**USERS**  
+![Sequence Diagram - USER](https://github.com/KIMB0/LSD_frontend/blob/master/User_HackerNew_Sequence_Diagram.jpg)
+
+**GUESTS**  
+![Sequence Diagram - GUEST](https://github.com/KIMB0/LSD_frontend/blob/master/Guest_HackerNews_Sequence_Diagram.jpg)

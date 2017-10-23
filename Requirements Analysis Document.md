@@ -1,7 +1,4 @@
-﻿# Requirements Analysis Document
-
-*Alexander, Danny, Kim*
-
+# LSD_RAD2017
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
 
@@ -118,7 +115,7 @@ The current system is HackerNews and you can see the description of the current 
 
 ### A. Overview
 
-The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has.
+The system is a exact copy of [Hackernews'](https://www.hackernews.com) system. Therfore our system will have the same functionallity as their system has. The main difference will be the frontend code.
 
 
 ### B1. Functional requirement
@@ -349,4 +346,22 @@ h. Legal
 **Flow of events** | <ol><li>The user opens the website</li><li>User clicks on the "Jobs" menu item</li><li>The user is presented with jobs from startups that are funded by Y Combinator</li><li>The user can click on any post to see its content</li><li>User will be directed to a post on the website or an external post about the job opportunity</li></ol>
 **Entry condition**| Clicking on the menu item: "Jobs"
 **Exit condition** | <ol><li>Clicking on another menu item or homepage</li></ol>
-**Quality requirements** | The list should be updated fast to the user, and there should be low response time.
+**Quality requirements** | The list should be updated fast to the user, and there should be low response time
+
+# Diagrams
+
+### Use case diagram
+![UseCaseDiagram](https://github.com/KIMB0/LSD_frontend/blob/master/Hackernews-clone.png)
+
+
+## Domain Diagram
+Based on the existing HackerNews system there is only two datatypes: Users and Items.  
+![Domain Diagram for the System](https://github.com/KIMB0/LSD_frontend/blob/master/User_Domain_Model.jpg)
+
+## Sequence Diagrams
+There are two types of Sequence Diagrams: One for Users and one for Guests.  
+**USERS**  
+![Sequence Diagram - USER](https://github.com/KIMB0/LSD_frontend/blob/master/User_HackerNew_Sequence_Diagram.jpg)
+
+**GUESTS**  
+![Sequence Diagram - GUEST](https://github.com/KIMB0/LSD_frontend/blob/master/Guest_HackerNews_Sequence_Diagram.jpg)

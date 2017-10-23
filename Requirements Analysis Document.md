@@ -290,7 +290,6 @@ h. Legal
 **Exit condition** | * The user is logged in OR is told to check if entered data is correct. </li></ol>
 **Quality requirements** | The response time for checking the database and logging the user in, should not exceed that of the original website Hackernews.
 
-
 ###### Ask Hacker News
 
 **Use case name**       | Ask Hacker News
@@ -305,21 +304,18 @@ h. Legal
 
 **Use case name**       | Submit item
 ------------    | ------------
-**Scope**|
-**Level**|
-**participating actor instances**| User
-**Stakeholders and interests**|
-**Preconditions**|
-**Postconditions**|
-**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a desired title for the story in the "title" text field</li><li>The user writes an url for the story in the "url" text field</li><li>The user clicks the "submit" button</li><li>The system determines if the user has entered only text, or title and a url also.</li><li>If both the title and the url field is used, the story posted by the user is now visible on the site</li></ol>
-**Extensions**|
-**Special requirements**|
-**Variations in Technology and Data**|
-**Frequency of Occurrence**|
-**Entry condition**| * The user needs to be logged in in order to submit a post. 
-**Exit condition** | * The post is created and is now visible to other users of the site. </li></ol>
-**Quality requirements** | The response time for submitting a post should not exceed that of the original website Hackernews.
-**Miscellaneous**|
+**Scope**| Hackernews Clone
+**Level**| user-goal
+**Primary actor**| User
+**Stakeholders and interests**|<ul><li>User/OP (original poster): Can learn a lot from the Hacker News community by reading comments and inspecting upvotes on his post. If the submitted item was a question for the readers, OP might learn a lot here as well. The submitted item can also be a comment to another post, and can be used to spread knowledge, or engage in a discussion. If the submitted item is a showcase of a self-made project, the user can gain valuable feedback on this.</li><li>Readers: On Hacker News can learn a lot from a shared story. If the submitted item is a question, they can learn a lot from the answer, or answer the question themselves and possibly receive karma points. If the submitted item was a job offer, the reader has a potential to find a new job. The reader can also learn a lot or be inspired from watching other users showcased home projects.</li><li>Shareholders: Of the story posted can be the authors of a article and hereby gain increased popularity and readers from the shared post.</li><li>Recruiting companies: That post a job opportunity through Hacker News now have the opportunity to gain a valuable colleague. It is also possible for a company to headhunt potential new colleagues by watching the different creative showcases listed on Hacker News.</li><li></li></ul>
+**Preconditions**| The user needs to be logged in, in order to submit an Item.
+**Postconditions**| The item is now submitted, and is visible to other users of the site. The submitted item is either a story, a comment, a showcase, a question or a job offer.
+**Main success scenario** |<ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a desired title for the story in the "title" text field</li><li>The user writes an url for the story in the "url" text field</li><li>The user clicks the "submit" button</li><li>The system determines if the user has entered only text, or title and a url also.</li><li>If both the title and the url field is used, the story posted by the user is now visible on the site.</li></ol>
+**Extensions (alternate flows)**|<ol type="a"><li>If the user writes "Show HN:" in the 'title' field, followed by a subject, the submitted item is now considered as a showcase, and will be listed under the 'show' menu.</li><li>If the user writes "Ask HN:" in the 'title' field, followed by a subject, the submitted item is now considered as a question for the Hacker News community.</li><li><ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user writes a comment in the comment box.</li><li>The user clicks the 'add comment' button.</li><li>The user has now posted a comment.</li></ol></li></ol>
+**Special requirements**| <ul><li>The response time for submitting a post should not exceed that of the original website Hackernews.</li></ul>
+**Variations in Technology and Data**| *N/A*
+**Frequency of Occurrence**| Could be nearly continuos.
+**Miscellaneous**| *N/A*
 
 ###### Sort stories
 

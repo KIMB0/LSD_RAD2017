@@ -100,7 +100,6 @@ HN                | HackerNews - Description can be read at the beginning of the
 ### E. References
 
 1. [HackerNews Homepage](https://news.ycombinator.com/)
-2. 
 
 ## F. Overview
 

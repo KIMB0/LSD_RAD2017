@@ -1,4 +1,6 @@
-# LSD_RAD2017
+# Requirements Analysis
+*Alexander, Danny, Kim*
+
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
 

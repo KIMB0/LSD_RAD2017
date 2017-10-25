@@ -1,10 +1,45 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-  <p><a routerLink="/news">Hacker News</a></p>
-  <p><a routerLink="/newest">new</a></p>
-  <p><a routerLink="/newcomments">comments</a></p>
-  <p><a routerLink="/show">show</a></p>
-  <p><a routerLink="/ask">ask</a></p>
-  <p><a routerLink="/jobs">jobs</a></p>
-  <p><a routerLink="/submit">submit</a></p>
-  <router-outlet></router-outlet>
+<body style="text-align:center">
+<div class="frontpage">
+<table>
+  <tr>
+    <th>
+      <p>
+        <a routerLink="/news">Hacker News</a>
+      </p>
+    </th>
+    <td>
+      <p>
+        <a routerLink="/newest">new</a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a routerLink="/newcomments">comments</a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a routerLink="/show">show</a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a routerLink="/ask">ask</a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a routerLink="/jobs">jobs</a>
+      </p>
+    </td>
+    <td>
+      <p>
+        <a routerLink="/submit">submit</a>
+      </p>
+    </td>
+  </tr>
+</table>
+</div>
+<router-outlet></router-outlet>
+</body>

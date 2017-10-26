@@ -348,7 +348,7 @@ h. Legal
 # Diagrams
 
 ### Use case diagram
-![UseCaseDiagram](https://github.com/KIMB0/LSD_frontend/blob/master/Hackernews-clone.png)
+![UseCaseDiagram](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/Hackernews-clone.png)
 
 
 ## Domain Diagram

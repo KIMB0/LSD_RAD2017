@@ -353,12 +353,12 @@ h. Legal
 
 ## Domain Diagram
 Based on the existing HackerNews system there is only two datatypes: Users and Items.  
-![Domain Diagram for the System](https://github.com/KIMB0/LSD_frontend/blob/master/User_Domain_Model.jpg)
+![Domain Diagram for the System](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/User_Domain_Model.jpg)
 
 ## Sequence Diagrams
 There are two types of Sequence Diagrams: One for Users and one for Guests.  
 **USERS**  
-![Sequence Diagram - USER](https://github.com/KIMB0/LSD_frontend/blob/master/User_HackerNew_Sequence_Diagram.jpg)
+![Sequence Diagram - USER](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/User_HackerNew_Sequence_Diagram.jpg)
 
 **GUESTS**  
-![Sequence Diagram - GUEST](https://github.com/KIMB0/LSD_frontend/blob/master/Guest_HackerNews_Sequence_Diagram.jpg)
+![Sequence Diagram - GUEST](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/Guest_HackerNews_Sequence_Diagram.jpg)

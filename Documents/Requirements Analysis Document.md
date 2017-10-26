@@ -352,3 +352,94 @@ There are two types of Sequence Diagrams: One for Users and one for Guests.
 
 **GUESTS**  
 ![Sequence Diagram - GUEST](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/Guest_HackerNews_Sequence_Diagram.jpg)
+
+
+
+# The Data Models
+
+This is an overview of the two different models that the system is build up upon.
+
+### Item
+When you are using the system and you look at: Stories, comments, jobs, Ask HNs and even polls, they are all related to the same data model: Item. They're identified by their ids, which are unique integers, and live under `/v0/item/<id>`.
+
+All items have some of the following properties, with required properties in bold:
+
+Field | Description
+------|------------
+**id** | The item's unique id.
+deleted | `true` if the item is deleted.
+type | The type of item. One of "job", "story", "comment", "poll", or "pollopt".
+by | The username of the item's author.
+time | Creation date of the item, in [Unix Time](http://en.wikipedia.org/wiki/Unix_time).
+text | The comment, story or poll text. HTML.
+dead | `true` if the item is dead.
+parent | The comment's parent: either another comment or the relevant story.
+poll | The pollopt's associated poll.
+kids | The ids of the item's comments, in ranked display order.
+url | The URL of the story.
+score | The story's score, or the votes for a pollopt.
+title | The title of the story, poll or job.
+parts | A list of related pollopts, in display order.
+descendants | In the case of stories or polls, the total comment count.
+
+Example: 
+
+For example, a story: ```/v0/item/8863```
+
+```javascript
+{
+  "by" : "dhouston",
+  "descendants" : 71,
+  "id" : 8863,
+  "kids" : [ 8952, 9224, 8917, 8884, 8887, 8943, 8869, 8958, 9005, 9671, 8940, 9067, 8908, 9055, 8865, 8881, 8872, 8873, 8955, 10403, 8903, 8928, 9125, 8998, 8901, 8902, 8907, 8894, 8878, 8870, 8980, 8934, 8876 ],
+  "score" : 111,
+  "time" : 1175714200,
+  "title" : "My YC app: Dropbox - Throw away your USB drive",
+  "type" : "story",
+  "url" : "http://www.getdropbox.com/u/2/screencast.html"
+}
+```
+
+### User
+The second data model is User. They can be found under the following route: ```/v0/user ```. You will only be able to retrieve users that are active in the system.
+
+The below table gives an overview of the different fields that the User contains: 
+
+Field | Description
+------|------------
+**id** | The user's unique username. Case-sensitive. Required.
+delay | Delay in minutes between a comment's creation and its visibility to other users.
+**created** | Creation date of the user, in [Unix Time](http://en.wikipedia.org/wiki/Unix_time).
+**karma** | The user's karma.
+about | The user's optional self-description. HTML.
+submitted | List of the user's stories, polls and comments.
+
+
+For example you can retrive a user by requesting a GET to ``` /v0/user/dij ```
+```javascript
+{
+  "about" : "This is a test",
+  "created" : 1173923446,
+  "delay" : 0,
+  "id" : "dij",
+  "karma" : 1652,
+  "submitted" : [6111999, 5580079, 5112008, 4907948, 4901821, 4700469, 4678919, 3779193, 3711380, 3701405, 3627981, 3473004, 3473000, 3457006, 3422158, 3136701, 2943046, 2794646, 2482737, 2425640, 2411925, 2408077, 2407992, 2407940, 2278689, 2220295, 2144918, 2144852, 1875323, 1875295, 1857397, 1839737, 1809010, 1788048, 1780681, 1721745, 1676227, 1654023, 1651449, 1641019, 1631985, 1618759, 1522978, 1499641, 1441290, 1440993, 1436440, 1430510, 1430208, 1385525, 1384917, 1370453, 1346118, 1309968, 1305415, 1305037, 1276771, 1270981, 1233287, 1211456, 1210688, 1210682, 1194189, 1193914, 1191653, 1190766, 1190319, 1189925, 1188455, 1188177, 1185884, 1165649, 1164314, 1160048, 1159156, 1158865, 1150900, 1115326, 933897, 924482, 923918, 922804, 922280, 922168, 920332, 919803, 917871, 912867, 910426, 902506, 891171, 807902, 806254 ]
+}
+```
+
+There are no more datamodels. The whole system are built up upon these. Instead of having a lot of different Data Models, everything is just Items. 
+
+## Routes
+
+***
+We recommend two things before trying out the API:  
+* Download [Postman](https://www.getpostman.com/) for testing routes with payload
+* Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) for Pretty JSON in your browser.
+
+This will help with a better overview and easier interaction with the API.
+***
+
+HTTP Method | DataModel | Route | Request | Response | Description
+------------| --------- | ------| --------| ---------| -----------
+**GET**     | **USER**  | /v0/user | No Payload needed | Response:  |  A list of all users in JSON format
+

@@ -288,16 +288,6 @@ h. Legal
 **Exit condition** | * The user is logged in OR is told to check if entered data is correct. </li></ol>
 **Quality requirements** | The response time for checking the database and logging the user in, should not exceed that of the original website Hackernews.
 
-###### Ask Hacker News
-
-**Use case name**       | Ask Hacker News
-------------    | ------------
-**participating actor instances**| User
-**Flow of events** | <ol><li>The user opens the website</li><li>The user is presented with the front page of the system</li><li>The user clicks the button at the top labeled "submit"</li><li>The user writes a question in the textfield, leaving the "url" field blank</li><li>The user clicks the button at the top labeled "submit".</li><li>The system determines if the user has entered only text, or url also.</li><li>If the user has only entered text, the question is now uploaded to the site</li></ol>
-**Entry condition**| * The user needs to be logged in in order to submit a question. 
-**Exit condition** | * The post is created and is now visible to other users of the site. </li></ol>
-**Quality requirements** | The response time for uploading the question should not exceed that of the original website Hackernews.
-
 ##### Submit item
 
 **Use case name**       | Submit item

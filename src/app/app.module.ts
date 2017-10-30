@@ -33,7 +33,8 @@ import { LoginComponent } from './login/login.component';
       {path: 'show', component: ShowComponent},
       {path: 'ask', component: AskComponent},
       {path: 'jobs', component: JobsComponent},
-      {path: 'submit', component: SubmitComponent}
+      {path: 'submit', component: SubmitComponent},
+      {path: 'app-login', component: LoginComponent}
     ])
   ],
   providers: [],

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TestServiceService } from '../test-service.service';
+
 
 @Component({
   selector: 'app-hacker-news',
@@ -9,7 +11,7 @@ export class HackerNewsComponent implements OnInit {
 
   public list = [];
 
-  constructor() {
+  constructor(private testService: TestServiceService ) {
     this.list = [{
       'titel' : 'The best search engine in the world! ',
       'websitelink' : 'google.com',
@@ -31,4 +33,7 @@ export class HackerNewsComponent implements OnInit {
 
   }
 
+  testHttp() {
+    this.testService.getHttp();
+  }
 }

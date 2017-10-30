@@ -1,7 +1,7 @@
 <div class="div-color">
   <div class="div-lefttopbottom-padding" *ngFor="let thing of list">
     <p>
-      <a routerLink="" style="color:black">{{thing.titel}}</a>
+      <a routerLink="" (click)="testHttp()" style="color:black">{{thing.titel}}</a>
       <small>
         <a routerLink=""> ({{thing.websitelink}}) </a>
       </small>

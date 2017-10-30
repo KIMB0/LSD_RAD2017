@@ -1,3 +1,18 @@
-<p>
-  hacker-news page works!
-</p>
+<div class="div-color">
+  <div class="div-lefttopbottom-padding" *ngFor="let thing of list">
+    <p>
+      <a routerLink="" style="color:black">{{thing.titel}}</a>
+      <small>
+        <a routerLink=""> ({{thing.websitelink}}) </a>
+      </small>
+    </p>
+    <div class="div-text-color">
+      <small> {{thing.points}} points by
+        <a routerLink="">{{thing.username}}</a>
+        <a routerLink="">{{thing.date}}</a> |
+        <a routerLink="">hide</a> |
+        <a routerLink="">{{thing.commentcount}} comments</a>
+      </small>
+    </div>
+  </div>
+</div>

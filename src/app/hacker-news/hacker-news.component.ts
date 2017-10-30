@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HackerNewsComponent implements OnInit {
 
-  constructor() { }
+  public list = [];
+
+  constructor() {
+    this.list = [{
+      'titel' : 'The best search engine in the world! ',
+      'websitelink' : 'google.com',
+      'points' : 32,
+      'username' : 'Kimbo1992',
+      'date' : '5 hours ago ',
+      'commentcount' : 2
+    }, {
+      'titel' : 'A funny website...',
+      'websitelink' : 'imgur.com',
+      'points' : 5,
+      'username' : 'JohnnyMan',
+      'date' : '23 hours ago ',
+      'commentcount' : 67
+    }];
+  }
 
   ngOnInit() {
+
   }
 
 }

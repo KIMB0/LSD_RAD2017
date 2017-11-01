@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  private isLoggedIn: boolean;
+  public isLoggedIn: boolean;
 
   ngOnInit() {
     this.isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));

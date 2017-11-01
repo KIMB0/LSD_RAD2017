@@ -13,6 +13,8 @@ import { JobsComponent } from './jobs/jobs.component';
 import { SubmitComponent } from './submit/submit.component';
 import { LoginComponent } from './login/login.component';
 
+import { AuthService } from './services/auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,11 +39,13 @@ import { LoginComponent } from './login/login.component';
       {path: 'submit', component: SubmitComponent},
       {path: 'app-login', component: LoginComponent},
       {path: '**', redirectTo: 'news', pathMatch: 'full'},
-      
+
     ]),
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

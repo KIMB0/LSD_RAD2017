@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-submit',
@@ -10,11 +11,18 @@ export class SubmitComponent implements OnInit {
   title: String = '';
   url: String = '';
   text: String = '';
+  private isLoggedIn: boolean;
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+    if (this.isLoggedIn === true) {
+      console.log('You are in');
+    } else {
+      this.router.navigate(['/app-login']);
+    }
   }
 
   submitItem() {

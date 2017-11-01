@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   private username = '';
   private password = '';
   private user = {};
-  private isLoggedIn: boolean;
+  public isLoggedIn: boolean;
 
 
   constructor(private authService: AuthService, private router: Router) { }

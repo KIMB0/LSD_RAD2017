@@ -1,57 +1,69 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <body>
-<div class="frontpage">
-<table>
-  <tr>
-    <th>
-      <p>
-        <a routerLink="/news">Hacker News</a>
-        | 
-      </p>
-    </th>
-    <td>
-      <p>
-        <a routerLink="/newest">new</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/newcomments">comments</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/show">show</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/ask">ask</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/jobs">jobs</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/submit">submit</a>
-        | 
-      </p>
-    </td>
-    <td>
-      <p>
-        <a routerLink="/app-login">login</a>
-      </p>
-    </td>
-  </tr>
-</table>
-</div>
-<router-outlet></router-outlet>
+  <div class="frontpage">
+    <table>
+      <tr>
+        <th>
+          <p>
+            <a routerLink="/news">Hacker News</a>
+            |
+          </p>
+        </th>
+        <td>
+          <p>
+            <a routerLink="/newest">new</a>
+            |
+          </p>
+        </td>
+        <td>
+          <p>
+            <a routerLink="/newcomments">comments</a>
+            |
+          </p>
+        </td>
+        <td>
+          <p>
+            <a routerLink="/show">show</a>
+            |
+          </p>
+        </td>
+        <td>
+          <p>
+            <a routerLink="/ask">ask</a>
+            |
+          </p>
+        </td>
+        <td>
+          <p>
+            <a routerLink="/jobs">jobs</a>
+            |
+          </p>
+        </td>
+        <td>
+          <p>
+            <a routerLink="/submit">submit</a>
+            |
+          </p>
+        </td>
+        <td *ngIf="!isLoggedIn">
+          <p>
+            <a routerLink="/app-login">login</a>
+          </p>
+        </td>
+        <td *ngIf="isLoggedIn">
+          <p>
+            <a routerLink="" (click)="logout()">logout</a>
+            | 
+          </p>
+        </td>
+        <td *ngIf="isLoggedIn">
+          <p>
+            <b>logged in - welcome to the Hacker News clone!</b>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <router-outlet></router-outlet>
 </body>

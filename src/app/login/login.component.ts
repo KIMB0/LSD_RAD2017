@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -7,21 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  private username = '';
+  private password = '';
+  private user = {};
   private isLoggedIn: boolean;
 
-  constructor() { }
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
+
   }
 
   login() {
-    localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn = false));
-    console.log('Stored!');
-  }
+    const object = {
+      'about' : null,
+      'created': null,
+      'delay': null,
+      'id': this.username,
+      'password' : this.password,
+      'karma': null,
+      'submitted': null
+    };
 
-  getTest() {
-    this.isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
-    console.log(this.isLoggedIn);
+    this.authService.login(object).subscribe(response => {
+      this.user = response;
+    }, err => alert('Something went wrong. Try again!'), () => localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn = true)));
   }
-
 }

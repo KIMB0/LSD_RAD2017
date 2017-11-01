@@ -15,6 +15,7 @@ import { SubmitComponent } from './submit/submit.component';
 import { LoginComponent } from './login/login.component';
 
 import { AuthService } from './services/auth.service';
+import { ItemService } from './services/item.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AuthService } from './services/auth.service';
     FormsModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    ItemService
   ],
   bootstrap: [AppComponent]
 })

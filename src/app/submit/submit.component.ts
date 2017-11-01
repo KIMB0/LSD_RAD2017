@@ -18,9 +18,7 @@ export class SubmitComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
-    if (this.isLoggedIn === true) {
-      console.log('You are in');
-    } else {
+    if (this.isLoggedIn !== true) {
       this.router.navigate(['/app-login']);
     }
   }

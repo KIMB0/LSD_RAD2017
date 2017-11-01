@@ -2,17 +2,15 @@
   <h3 class="heading-padding">
     Login
   </h3>
-  <form>
-    <label for="username">Username: </label>
-    <input type="text" name="username" />
+    <label>Username: </label>
+    <input type="text" [(ngModel)]="username"/>
     <br>
     <br>
-    <label for="password">Password: </label>
-    <input type="password" name="password" />
+    <label>Password: </label>
+    <input type="password" [(ngModel)]="password"/>
     <br>
     <br>
-    <button>login</button>
-  </form>
+    <button (click)="login()">login</button>
   <br>
   <h3>
     Create Account

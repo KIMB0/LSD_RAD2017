@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemService } from '../services/item.service';
 
 @Component({
   selector: 'app-hacker-news',
@@ -7,28 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HackerNewsComponent implements OnInit {
 
-  public list = [];
+  public list: any;
 
-  constructor() {
-    this.list = [{
-      'titel' : 'The best search engine in the world! ',
-      'websitelink' : 'google.com',
-      'points' : 32,
-      'username' : 'Kimbo1992',
-      'date' : '5 hours ago ',
-      'commentcount' : 2
-    }, {
-      'titel' : 'A funny website...',
-      'websitelink' : 'imgur.com',
-      'points' : 5,
-      'username' : 'JohnnyMan',
-      'date' : '23 hours ago ',
-      'commentcount' : 67
-    }];
+  constructor(private itemService: ItemService) {
   }
 
   ngOnInit() {
-
+    this.itemService.getItems().subscribe(response => {
+      this.list = response;
+    }, err => alert('Something went wrong - try again!'), () => console.log(this.list));
   }
 
 }

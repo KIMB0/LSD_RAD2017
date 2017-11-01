@@ -1,17 +1,17 @@
 <div class="div-color">
-  <div class="div-lefttopbottom-padding" *ngFor="let thing of list">
+  <div class="div-lefttopbottom-padding" *ngFor="let item of list">
     <p>
-      <a routerLink="" style="color:black">{{thing.titel}}</a>
+      <a routerLink="" style="color:black">{{item.text}}</a>
       <small>
-        <a routerLink=""> ({{thing.websitelink}}) </a>
+        <a routerLink=""> ({{item.url}}) </a>
       </small>
     </p>
     <div class="div-text-color">
-      <small> {{thing.points}} points by
-        <a routerLink="">{{thing.username}}</a>
-        <a routerLink="">{{thing.date}}</a> |
+      <small> {{item.score}} points by
+        <a routerLink="">{{item.by}}</a>
+        <a routerLink="">{{item.timestamp}}</a> |
         <a routerLink="">hide</a> |
-        <a routerLink="">{{thing.commentcount}} comments</a>
+        <a routerLink="">{{item.kids}} comments</a>
       </small>
     </div>
   </div>

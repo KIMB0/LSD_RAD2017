@@ -35,7 +35,9 @@ import { LoginComponent } from './login/login.component';
       {path: 'ask', component: AskComponent},
       {path: 'jobs', component: JobsComponent},
       {path: 'submit', component: SubmitComponent},
-      {path: 'app-login', component: LoginComponent}
+      {path: 'app-login', component: LoginComponent},
+      {path: '**', redirectTo: 'news', pathMatch: 'full'},
+      
     ]),
     FormsModule
   ],

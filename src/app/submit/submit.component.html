@@ -1,3 +1,27 @@
-<p>
-  submit works!
-</p>
+<div class="div-color">
+  <h3 class="heading-padding">
+    Submit an item
+  </h3>
+  <p>
+    title:
+  </p>
+  <input [(ngModel)]="title"/>
+
+  <p>
+    url:
+  </p>
+  <input [(ngModel)]="url"/>
+  
+  <br>
+  <br>
+
+  <b>or</b>
+  <p>
+    text:
+  </p>
+  <textarea name="Text1" cols="40" rows="5" [(ngModel)]="text"></textarea>
+  <br>
+  <br>
+  <button (click)="submitItem()">submit</button>
+
+</div>

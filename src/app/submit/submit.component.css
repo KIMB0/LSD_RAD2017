@@ -1,0 +1,9 @@
+.div-color{
+    background-color: #f7f7f7;
+    height: -webkit-fill-available;
+}
+
+.heading-padding {
+    margin-top: 0px;
+    padding-top: 20px;
+}

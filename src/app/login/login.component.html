@@ -1,4 +1,4 @@
-<div class="div-color">
+<div class="div-color" *ngIf="!isLoggedIn">
   <h3 class="heading-padding">
     Login
   </h3>
@@ -24,6 +24,9 @@
     <input type="password" name="password" />
     <br>
     <br>
-    <button (click)="getTest()">create account</button>
+    <button (click)="setFalse()">create account</button>
   </form>
 </div>
+<h2 *ngIf="isLoggedIn">
+  You are now logged in!
+</h2>

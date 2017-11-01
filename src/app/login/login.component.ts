@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   private isLoggedIn: boolean;
 
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
 
@@ -33,6 +34,11 @@ export class LoginComponent implements OnInit {
 
     this.authService.login(object).subscribe(response => {
       this.user = response;
-    }, err => alert('Something went wrong. Try again!'), () => localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn = true)));
+    }, err => alert('Something went wrong. Try again!'), () => {
+      localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn = true)), location.reload(), this.router.navigate(['/news'])});
+  }
+
+  setFalse() {
+    localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn = false));
   }
 }

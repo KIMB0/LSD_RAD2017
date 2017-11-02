@@ -10,10 +10,10 @@ import { ItemService } from '../services/item.service';
 })
 export class SubmitComponent implements OnInit {
 
-  private title = '';
-  private url = '';
-  private text = '';
-  private item: any;
+  public title = '';
+  public url = '';
+  public text = '';
+  public item: any;
   public isLoggedIn: boolean;
 
 

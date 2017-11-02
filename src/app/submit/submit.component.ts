@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ItemService } from '../services/item.service';
+
 
 @Component({
   selector: 'app-submit',
@@ -8,13 +10,14 @@ import { Router } from '@angular/router';
 })
 export class SubmitComponent implements OnInit {
 
-  title: String = '';
-  url: String = '';
-  text: String = '';
-  private isLoggedIn: boolean;
+  private title = '';
+  private url = '';
+  private text = '';
+  private item: any;
+  public isLoggedIn: boolean;
 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private itemService: ItemService) { }
 
   ngOnInit() {
     this.isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
@@ -23,8 +26,27 @@ export class SubmitComponent implements OnInit {
     }
   }
 
-  submitItem() {
-    console.log(this.title, this.url, this.text);
+  postItem() {
+    const object = {
+      'id' : '1',
+      'deleted' : 'false',
+      'type' : 'new',
+      'by' : 'foo',
+      'timestamp' : '1509301289',
+      'text' : this.text,
+      'dead' : 'false',
+      'parent' : '0',
+      'poll' : [],
+      'kids' : [],
+      'url' : this.url,
+      'score' : '0',
+      'title' : this.title,
+      'parts' : [],
+      'descendants' : 1
+  };
+    this.itemService.postItem(object).subscribe(() => {
+      '';
+    }, err => alert('Something went wrong!'), () => this.router.navigate(['/news']));
   }
 
 }

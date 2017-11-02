@@ -16,7 +16,7 @@ export class HackerNewsComponent implements OnInit {
   ngOnInit() {
     this.itemService.getItems().subscribe(response => {
       this.list = response;
-    }, err => alert('Something went wrong - try again!'), () => console.log(this.list));
+    }, err => alert('Something went wrong - try again!'), () => '');
   }
 
 }

@@ -12,4 +12,8 @@ export class ItemService {
   getItems() {
     return this.http.get(this.baseURL + 'item/');
   }
+
+  postItem(object: Object) {
+    return this.http.post(this.baseURL + 'item/', object);
+  }
 }

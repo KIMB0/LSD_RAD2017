@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This is a formal service commitment between **Group14-Development** & **GroupF-Operation**.  
+This is a formal service commitment between **GroupE-Development** & **GroupF-Operation**.  
 The document intends to create a contract between the two to have a common agreement on the operational of the application.   The document only gives an operational view of Hackernews and has nothing to do with the development of the application.  That is stated in another contract.  
 
 ## Terms

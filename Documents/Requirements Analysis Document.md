@@ -4,15 +4,15 @@
 First project in Large Systems.
 The task during the first eight weeks of the course is to implement a functional clone of [**Hacker News**](https://news.ycombinator.com/).
 
-## Project highlight
+## RAD Highligt
 
 1. Introduction
-  A. Purpose of the system
-  B. Scope of the system  
-  C. Objectives and success criteria of the project    
-  D. Definitions, acronyms, and abbreviations  
-  E. References  
-  F. Overview  
+  A. Purpose of the system
+  B. Scope of the system
+  C. Objectives and success criteria of the project
+  D. Definitions, acronyms, and abbreviations
+  E. References
+  F. Overview
   
 2. Current system
 

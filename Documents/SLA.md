@@ -47,7 +47,9 @@ The hours are defined as a TTR (Time-to-respond). On **Urgent** & **Important** 
 For all other priorities, its only needful to create an issue on [**Github**, which can be done on this hyperlink](https://github.com/AlexanderFalk/hackernews_backend/issues).   
 
 ### Major Incidents
+This is a new line
 
+## General
 Everything is monthly based. This means that at the end of the month the KPI's will be evalutated. If they are above the thresholds set in the SLA-agreement, the customer will not get any credit. If it is below the thresholds, a calculation will be made for the customer. 
 
 The whole contract is apealed if a global issue occurs. This could be certificates failure from **Globalsign**, a infrastructure breakdown at **Hetzner.com**, natural disasters, or similar issues. This is out of our hands and therefore Group14 can't take responsibility for these causes.  

@@ -29,6 +29,7 @@ Each percent under the threshold will give a credit of **0.5%** back of the tota
 The KPI is not counting when the monthly maintenance is ongoing.
 
 ### Mean Time Recovery
+The average time that it will take for the service to recover from failure can vary greatly. It is very difficult to estimate recovery time for a hypothetical issue. That said, any fatal failure to the system will be handled as an **Urgent Incident** (see the *Issue request / Response Time* paragraph for more details).
 
 ### Quality Assurance
 
@@ -52,4 +53,4 @@ This is a new line
 ## General
 Everything is monthly based. This means that at the end of the month the KPI's will be evalutated. If they are above the thresholds set in the SLA-agreement, the customer will not get any credit. If it is below the thresholds, a calculation will be made for the customer. 
 
-The whole contract is apealed if a global issue occurs. This could be certificates failure from **Globalsign**, a infrastructure breakdown at **Hetzner.com**, natural disasters, or similar issues. This is out of our hands and therefore Group14 can't take responsibility for these causes.  
+The whole contract is apealed if a global issue occurs. This could be certificates failure from **Globalsign**, a infrastructure breakdown at **Hetzner.com**, natural disasters, or similar issues. This is out of our hands and therefore **Group E** can't take responsibility for these causes.  

@@ -2,9 +2,9 @@
 *Alexander, Danny, Kim*
 
 First project in Large Systems.
-The task during the first eight weeks of the course is to implement a functional clone of **Hacker News**.
+The task during the first eight weeks of the course is to implement a functional clone of [**Hacker News**](https://news.ycombinator.com/).
 
-## Create a Requirements Analysis Document (RAD) for your project
+## Project highlight
 
 1. Introduction
   A. Purpose of the system

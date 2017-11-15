@@ -2,6 +2,9 @@
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
 module.exports = function (config) {
+  if (process.env.TRAVIS) {
+    configuration.browsers = ['Chrome_travis_ci'];
+  }
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular/cli'],
@@ -36,8 +39,5 @@ module.exports = function (config) {
     browsers: ['Chrome'],
     singleRun: false
   });
-  if (process.env.TRAVIS) {
-    configuration.browsers = ['Chrome_travis_ci'];
-  }
 };
 

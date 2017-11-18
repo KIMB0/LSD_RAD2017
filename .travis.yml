@@ -26,6 +26,7 @@ before_deploy:
   - ng build --prod
 
 deploy:
+  skip_cleanup: true
   - bash _scripts/deploy.sh
   
 # branches:

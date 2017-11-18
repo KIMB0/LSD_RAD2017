@@ -10,4 +10,4 @@ git config user.email "kimsen1992@gmail.com"
 
 git add .
 git commit -m "Deploy"
-git push -u deploy master
+git push --force deploy master

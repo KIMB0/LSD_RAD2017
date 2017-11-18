@@ -4,10 +4,6 @@ language: node_js
 node_js:
 - '7'
 
-# branches:
-#   only:
-#     - master
-
 addons:
   ssh_known_hosts: 138.197.42.192
 apt:
@@ -26,3 +22,7 @@ after_success:
   - bash _scripts/deploy.sh
 
 script: karma start ./karma.conf.js --single-run
+
+# branches:
+#   only:
+#     - master

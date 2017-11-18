@@ -3,6 +3,7 @@ set -x
 if [ $TRAVIS_BRANCH == 'travis-setup' ] ; then
 
     # Initialize a new git repo in _site, and push it to our server.
+    ng build --prod
     cd dist
     git init
 

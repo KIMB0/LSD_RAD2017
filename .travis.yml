@@ -9,7 +9,7 @@ node_js:
 #     - master
 
 addons:
-  ssh_known_hosts: 165.227.162.254
+  ssh_known_hosts: 138.197.42.192
 apt:
   sources:
     - google-chrome

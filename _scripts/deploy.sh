@@ -5,7 +5,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
     cd resources
     git init
         
-    git remote add deploy "root@165.227.162.254:/var/repo/travis.git"
+    git remote add deploy "root@138.197.42.192:/var/repo/.git-travis"
     git config user.name "KIMB0"
     git config user.email "kimsen1992@gmail.com"
     

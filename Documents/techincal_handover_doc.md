@@ -10,8 +10,8 @@ For system scope, specification, introduction, implementation and much more, see
 
 Right now we (only) have two separate components running. A front-end (made in the Angular framework) and a back-end (made in REST).
 
-* The **Front-end** runs on a remote droplet server, located [here](http://165.227.162.254/dist/news).
-* The **Back-end** runs on another remote server, located [here](**insert-link-here**):
+* The **Front-end** runs on a remote droplet server, located [here](http://138.197.42.192).
+* The **Back-end** runs on another remote server, located [here](http://94.130.57.246:9000/hackernews/):
 
 ## Credentials
 
@@ -52,3 +52,11 @@ Restart each component from here. Alternatively, you can contact the authors of 
 ## Accessing inner state information
 
 To gain in-depth information/access of databases, log files etc., contact the authors of this document directly, or leave an issue at the [official repository](https://github.com/AlexanderFalk/hackernews_backend/issues) with the label "information wanted".
+
+## CI/CO
+
+**Front-end**: Here we use Travis CI. It is set up to work like this:
+1. A pull request is created
+2. Travis then runs all test but do not deploy anything
+3. If tests are succesfull, we can merge the pull request into master-branch
+4. Travis runs all the tests again, and if it succeed then it will deploy to our live webserver. 

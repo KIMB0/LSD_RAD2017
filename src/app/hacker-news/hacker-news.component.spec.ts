@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HackerNewsComponent } from './hacker-news.component';
+import { ItemService } from '../services/item.service';
+
 
 describe('HackerNewsComponent', () => {
   let component: HackerNewsComponent;
@@ -8,7 +11,11 @@ describe('HackerNewsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HackerNewsComponent ]
+      imports: [HttpClientModule],
+      declarations: [ HackerNewsComponent ],
+      providers: [
+        ItemService
+      ],
     })
     .compileComponents();
   }));

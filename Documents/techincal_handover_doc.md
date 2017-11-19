@@ -11,7 +11,7 @@ For system scope, specification, introduction, implementation and much more, see
 Right now we (only) have two separate components running. A front-end (made in the Angular framework) and a back-end (made in REST).
 
 * The **Front-end** runs on a remote droplet server, located [here](http://138.197.42.192).
-* The **Back-end** runs on another remote server, located [here](**insert-link-here**):
+* The **Back-end** runs on another remote server, located [here](http://94.130.57.246:9000/hackernews/):
 
 ## Credentials
 

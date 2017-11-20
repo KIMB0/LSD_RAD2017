@@ -4,7 +4,7 @@ This is the tenth weekly assignment in the Large Systems Development curse. The 
 
 ## What is Docker Swarm, and why do we need it?
 
-Docker Swarm combines the useful commands and functionality of Docker, with cluster functionality (Swarmkit). This means that it is possible to run a swarm of Docker hosts on a single, virtual host - known as the Manager. 
+Docker Swarm combines the useful commands and functionality of Docker, with cluster functionality (Swarmkit). This means that it is possible to run a swarm of Docker hosts (workers) on a single, virtual host - known as the Manager. 
 
 ## How can it help eliminating bottlenecks?
 

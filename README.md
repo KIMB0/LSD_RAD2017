@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/KIMB0/LSD_frontend.svg?branch=master)](https://travis-ci.org/KIMB0/LSD_frontend)
+
 # Hackernews Clone - front-end
 ## See also: [back-end](https://github.com/AlexanderFalk/hackernews_backend).
 

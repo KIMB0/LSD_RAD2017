@@ -8,8 +8,6 @@ branches:
     - master
 addons:
   ssh_known_hosts: 138.197.42.192
-ignore:
-  - *.md
 apt:
   sources:
     - google-chrome

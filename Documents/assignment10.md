@@ -1,5 +1,7 @@
 # Assignment 10 - Scaling
 
+This is the tenth weekly assignment in the Large Systems Development curse. The assignment description can be found [here](https://cphbusiness.mrooms.net/mod/assign/view.php?id=52923).
+
 ## What is Docker Swarm, and why do we need it?
 
 Docker Swarm combines the useful commands and functionality of Docker, with cluster functionality (Swarmkit). This means that it is possible to run a swarm of Docker hosts on a single, virtual host - known as the Manager. 

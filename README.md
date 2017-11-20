@@ -1,6 +1,7 @@
+# Hackernews Clone - front-end
+
 [![Build Status](https://travis-ci.org/KIMB0/LSD_frontend.svg?branch=master)](https://travis-ci.org/KIMB0/LSD_frontend)
 
-# Hackernews Clone - front-end
 ## See also: [back-end](https://github.com/AlexanderFalk/hackernews_backend).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.

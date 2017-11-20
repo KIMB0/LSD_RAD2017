@@ -1,3 +1,6 @@
+ignore:
+  - *.md
+
 sudo: required  
 dist: trusty
 language: node_js

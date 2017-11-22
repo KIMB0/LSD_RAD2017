@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HackerNewsComponent } from './hacker-news.component';
-import { ItemService } from '../services/item.service';
+import { ItemService } from '../../services/item.service';
 
 
 describe('HackerNewsComponent', () => {

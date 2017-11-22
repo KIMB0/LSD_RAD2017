@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { SubmitComponent } from './submit.component';
 
-import { ItemService } from '../services/item.service';
+import { ItemService } from '../../services/item.service';
 
 describe('SubmitComponent', () => {
   let component: SubmitComponent;

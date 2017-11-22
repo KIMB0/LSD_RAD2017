@@ -5,17 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HackerNewsComponent } from './hacker-news/hacker-news.component';
-import { NewComponent } from './new/new.component';
-import { CommentsComponent } from './comments/comments.component';
-import { ShowComponent } from './show/show.component';
-import { AskComponent } from './ask/ask.component';
-import { JobsComponent } from './jobs/jobs.component';
-import { SubmitComponent } from './submit/submit.component';
-import { LoginComponent } from './login/login.component';
+import { HackerNewsComponent } from '../pages/hacker-news/hacker-news.component';
+import { NewComponent } from '../pages/new/new.component';
+import { CommentsComponent } from '../pages/comments/comments.component';
+import { ShowComponent } from '../pages/show/show.component';
+import { AskComponent } from '../pages/ask/ask.component';
+import { JobsComponent } from '../pages/jobs/jobs.component';
+import { SubmitComponent } from '../pages/submit/submit.component';
+import { LoginComponent } from '../pages/login/login.component';
 
-import { AuthService } from './services/auth.service';
-import { ItemService } from './services/item.service';
+import { AuthService } from '../services/auth.service';
+import { ItemService } from '../services/item.service';
 
 @NgModule({
   declarations: [

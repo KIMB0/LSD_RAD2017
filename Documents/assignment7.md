@@ -1,4 +1,4 @@
-# Assignment 10 - Scaling
+# Assignment 7 - Scaling
 
 This is the tenth weekly assignment in the Large Systems Development course. The assignment description can be found [here](https://cphbusiness.mrooms.net/mod/assign/view.php?id=52923).
 

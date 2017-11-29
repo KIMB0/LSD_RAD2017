@@ -3,7 +3,6 @@
 
 ## Threat modeling
 
-<!-- This is used for identifying threats and our vulnerabilities and what assets they can compromise. -->
 By modeling our threats, we are trying to identify different security factors surrounding our project. Mainly where we could be vulnerable, and who would potentially exploit that.
 The key is to get an overview of threats, so we know where we should apply the most effort to keep the system secure. 
 

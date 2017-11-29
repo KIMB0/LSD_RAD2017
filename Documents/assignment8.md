@@ -3,7 +3,11 @@
 
 ## Threat modeling
 
-My modeling our threats, we are trying to identify different security factors surrounding our project. Mainly where we could be vulnerable, and who would potentially exploit that.
+This is used for identifying threats and our vulnerabilities and what assets they can compromise.
+By modeling our threats, we are trying to identify different security factors surrounding our project. Mainly where we could be vulnerable, and who would potentially exploit that.
+The key is to get an overview so we know where we should apply the most effort to keep the system secure. 
+The basic terminology:
+-
 
 [Click here](https://github.com/KIMB0/LSD_frontend/blob/master/Documents/Threat%20modeling%20-%20Hackernews%20Clone.pdf) to see our threat table.
 

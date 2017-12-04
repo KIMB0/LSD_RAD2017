@@ -43,7 +43,7 @@ Found a bug? Please create an issue [at the remote GitHub repository](https://gi
 
 The servers hosting the components reside here (refer to the [Credentials](#credentials) section to get login details):
 
-**Front-end**: is hosted by DigitalOcean, and resides [here](https://cloud.digitalocean.com/droplets/63474978/).
+**Front-end**: is hosted by DigitalOcean, and resides [here](https://cloud.digitalocean.com/droplets/71474716/).
 
 **Back-end**: is hosted by Hetzner, and resides [here](https://www.hetzner.com/virtual-server/cx40).
 

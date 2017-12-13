@@ -12,4 +12,8 @@ export class AuthService {
   login(object: Object) {
     return this.http.post(this.baseURL + 'login/', object);
   }
+
+  signup(object: Object) {
+    return this.http.post(this.baseURL + 'user/', object);
+  }
 }

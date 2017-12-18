@@ -1,9 +1,9 @@
 <div class="div-color">
   <div class="div-lefttopbottom-padding" *ngFor="let item of list">
     <p>
-      <a routerLink="" style="color:black">{{item.title}}</a>
+      <a href="{{item.url}}" style="color:black">{{item.title}}</a>
       <small>
-        <a routerLink=""> ({{item.url}}) </a>
+        <a href="{{item.url}}"> ({{item.url}}) </a>
       </small>
     </p>
     <div class="div-text-color">

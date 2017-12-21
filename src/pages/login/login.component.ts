@@ -35,6 +35,8 @@ export class LoginComponent implements OnInit {
       'submitted': null
     };
 
+    localStorage.setItem('username', object.id);
+
     this.authService.login(object).subscribe(response => {
       this.user = response;
     }, err => alert('Something went wrong. Try again!'), () => {

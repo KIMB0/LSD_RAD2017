@@ -13,7 +13,7 @@ export class SubmitComponent implements OnInit {
   public title = '';
   public url = '';
   public text = '';
-  public item: any;
+  public by = undefined;
   public isLoggedIn: boolean;
 
 
@@ -24,26 +24,30 @@ export class SubmitComponent implements OnInit {
     if (this.isLoggedIn !== true) {
       this.router.navigate(['/app-login']);
     }
+    if (localStorage.getItem('username')) {
+      this.by = localStorage.getItem('username');
+    }
   }
 
   postItem() {
     const object = {
-      'id' : '1',
-      'deleted' : 'false',
-      'type' : 'new',
-      'by' : 'foo',
-      'timestamp' : '1509301289',
-      'text' : this.text,
-      'dead' : 'false',
-      'parent' : '0',
-      'poll' : [],
-      'kids' : [],
-      'url' : this.url,
-      'score' : '0',
-      'title' : this.title,
-      'parts' : [],
-      'descendants' : 1
-  };
+      'id': '2',
+      'deleted': 'false',
+      'type': 'story',
+      'by': this.by,
+      'timestamp': '1509301289',
+      'text': this.text,
+      'dead': 'false',
+      'parent': '0',
+      'poll': [],
+      'kids': [],
+      'url': this.url,
+      'score': '0',
+      'title': this.title,
+      'parts': [],
+      'descendants': 1
+    };
+
     this.itemService.postItem(object).subscribe(() => {
       '';
     }, err => alert('Something went wrong!'), () => this.router.navigate(['/news']));

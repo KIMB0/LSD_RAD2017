@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { ItemService } from '../../services/item.service';
-import { SelectedStoryComponent } from '../selected-story/selected-story.component';
 
 
 @Component({
@@ -23,7 +22,7 @@ export class HackerNewsComponent implements OnInit {
   }
 
   goToSelectedStory(selectedStory) {
-    this.router.navigate(['selectedstory'], selectedStory);
+    this.router.navigate(['/selectedstory'], selectedStory);
   }
 
 }

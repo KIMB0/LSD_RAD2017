@@ -11,7 +11,7 @@
         <a routerLink="">{{item.by}}</a>
         <a routerLink="">{{item.timestamp}}</a> |
         <a routerLink="">hide</a> |
-        <a routerLink="" (click)="goToSelectedStory(item)">{{item.kids}} comments</a>
+        <a [routerLink]="['/selectedstory', item]">{{item.kids}} comments</a>
       </small>
     </div>
   </div>

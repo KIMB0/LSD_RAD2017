@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-selected-story',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./selected-story.component.css']
 })
 export class SelectedStoryComponent implements OnInit {
+  private item: any;
 
-  constructor() { }
+  constructor(private router: ActivatedRoute) {
+    this.router.params.subscribe(params => {
+      this.item = params;
+    });
+  }
 
   ngOnInit() {
   }

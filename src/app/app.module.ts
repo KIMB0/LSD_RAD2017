@@ -42,6 +42,7 @@ import { SelectedStoryComponent } from '../pages/selected-story/selected-story.c
       { path: 'jobs', component: JobsComponent },
       { path: 'submit', component: SubmitComponent },
       { path: 'app-login', component: LoginComponent },
+      { path: 'selectedstory', component: SelectedStoryComponent},
       { path: '**', redirectTo: 'news', pathMatch: 'full' },
 
     ]),

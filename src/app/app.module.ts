@@ -16,6 +16,7 @@ import { LoginComponent } from '../pages/login/login.component';
 
 import { AuthService } from '../services/auth.service';
 import { ItemService } from '../services/item.service';
+import { SelectedStoryComponent } from '../pages/selected-story/selected-story.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ItemService } from '../services/item.service';
     AskComponent,
     JobsComponent,
     SubmitComponent,
-    LoginComponent
+    LoginComponent,
+    SelectedStoryComponent
   ],
   imports: [
     BrowserModule,

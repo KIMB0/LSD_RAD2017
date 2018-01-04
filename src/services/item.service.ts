@@ -13,6 +13,10 @@ export class ItemService {
     return this.http.get(this.baseURL + 'item/');
   }
 
+  getItemsById(id: number) {
+    return this.http.get(this.baseURL + 'item/' + id);
+  }
+
   getLastItems() {
     return this.http.get(this.baseURL + 'latestThirty/');
   }

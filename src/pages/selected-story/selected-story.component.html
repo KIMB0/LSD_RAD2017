@@ -1,3 +1,17 @@
-<p>
-  selected-story works!
-</p>
+<div class="div-color">
+  <div class="div-lefttopbottom-padding">
+    <p>
+      <a href="{{item.url}}" style="color:black">{{item.title}}</a>
+      <small>
+        <a href="{{item.url}}"> ({{item.url}}) </a>
+      </small>
+    </p>
+    <div class="div-text-color">
+      <small> {{item.score}} points by
+        <a routerLink="">{{item.by}}</a>
+        <a routerLink="">{{item.timestamp}}</a> |
+        <a routerLink="">hide</a>
+      </small>
+    </div>
+  </div>
+</div>

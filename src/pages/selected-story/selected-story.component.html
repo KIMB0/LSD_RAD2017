@@ -13,5 +13,19 @@
         <a routerLink="">hide</a>
       </small>
     </div>
+    <br> {{item.text}}
+    <br>
+    <br>
+    <br>
+    <textarea name="addComment" cols="50" rows="5" [(ngModel)]="text"></textarea>
+    <br>
+    <br>
+    <button (click)="addComment()">add comment</button>
   </div>
+  <div class="div-lefttopbottom-padding" *ngFor="let comments of kids">
+    <small class="div-text-color">by {{comments.by}}</small>
+    <br>
+    <p>{{comments.text}}</p>
+  </div>
+  <br>
 </div>

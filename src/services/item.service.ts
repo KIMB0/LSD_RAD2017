@@ -24,4 +24,8 @@ export class ItemService {
   postItem(object: Object) {
     return this.http.post(this.baseURL + 'item/', object);
   }
+
+  postComment(parrentId: number, object: Object) {
+    return this.http.post(this.baseURL + 'item/' + parrentId + '/comment', object);
+  }
 }

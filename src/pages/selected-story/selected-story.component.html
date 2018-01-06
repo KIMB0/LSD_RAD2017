@@ -1,0 +1,31 @@
+<div class="div-color">
+  <div class="div-lefttopbottom-padding">
+    <p>
+      <a href="{{item.url}}" style="color:black">{{item.title}}</a>
+      <small>
+        <a href="{{item.url}}"> ({{item.url}}) </a>
+      </small>
+    </p>
+    <div class="div-text-color">
+      <small> {{item.score}} points by
+        <a routerLink="">{{item.by}}</a>
+        <a routerLink="">{{item.timestamp}}</a> |
+        <a routerLink="">hide</a>
+      </small>
+    </div>
+    <br> {{item.text}}
+    <br>
+    <br>
+    <br>
+    <textarea name="postComment" cols="50" rows="5" [(ngModel)]="text"></textarea>
+    <br>
+    <br>
+    <button (click)="postComment()">add comment</button>
+  </div>
+  <div class="div-lefttopbottom-padding" *ngFor="let comments of kids">
+    <small class="div-text-color">by {{comments.by}}</small>
+    <br>
+    <p>{{comments.text}}</p>
+  </div>
+  <br>
+</div>

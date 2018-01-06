@@ -4,3 +4,17 @@ body {
     padding-right: 60px;
     margin: 0px
 }
+
+.div-color{
+    background-color: #f7f7f7;
+}
+
+.div-lefttopbottom-padding{
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.div-text-color{
+    color: #9fa3a8;
+}

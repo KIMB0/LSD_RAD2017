@@ -13,11 +13,19 @@ export class ItemService {
     return this.http.get(this.baseURL + 'item/');
   }
 
+  getItemsById(id: number) {
+    return this.http.get(this.baseURL + 'item/' + id);
+  }
+
   getLastItems() {
     return this.http.get(this.baseURL + 'latestThirty/');
   }
 
   postItem(object: Object) {
     return this.http.post(this.baseURL + 'item/', object);
+  }
+
+  postComment(parrentId: number, object: Object) {
+    return this.http.post(this.baseURL + 'item/' + parrentId + '/comment', object);
   }
 }

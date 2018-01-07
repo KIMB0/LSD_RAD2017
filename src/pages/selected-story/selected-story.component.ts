@@ -11,8 +11,8 @@ import { forEach } from '@angular/router/src/utils/collection';
   styleUrls: ['./selected-story.component.css']
 })
 export class SelectedStoryComponent implements OnInit {
-  private item: any;
-  private kids: any = [];
+  public item: any;
+  public kids: any = [];
   public by = undefined;
   public text: string;
   public isLoggedIn: boolean;

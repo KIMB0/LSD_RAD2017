@@ -56,8 +56,9 @@ export class SelectedStoryComponent implements OnInit {
       };
       this.itemService.postComment(object.id, object).subscribe(() => {
         '';
-      }, err => alert('Something went wrong!'),
-        this.kids.push(object) //PRØV HER
+      }, err => alert('Something went wrong!'), () => {
+        this.kids.push(object); this.text = '';
+      }
       );
     } else {
       alert('You have to be signed in to comment!');
@@ -68,7 +69,7 @@ export class SelectedStoryComponent implements OnInit {
   ngOnInit() {
     this.router.params.subscribe(params => {
       this.item = params;
-      if (this.item.kids !== 'null' || this.item.kids !== -1 ) {
+      if (this.item.kids !== 'null' || this.item.kids !== -1) {
         this.getKids();
       }
     });

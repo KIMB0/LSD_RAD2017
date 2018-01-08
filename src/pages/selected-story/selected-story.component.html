@@ -3,7 +3,7 @@
     <p>
       <a href="{{item.url}}" style="color:black">{{item.title}}</a>
       <small>
-        <a href="{{item.url}}"> ({{item.url}}) </a>
+        <a href="{{item.url}}"> ({{item.url | slice:0:50}}) </a>
       </small>
     </p>
     <div class="div-text-color">
